@@ -51,7 +51,7 @@ class MTableGroupbar extends React.Component {
               style={this.getListStyle(snapshot.isDraggingOver)}
             >
               {this.props.groupColumns.length > 0 && (
-                <Typography variant="caption" style={{ padding: 8 }}>
+                <Typography variant="selectLabel" style={{ padding: 8 }}>
                   {this.props.localization.groupedBy}
                 </Typography>
               )}
@@ -107,7 +107,7 @@ class MTableGroupbar extends React.Component {
                 );
               })}
               {this.props.groupColumns.length === 0 && (
-                <Typography variant="caption" style={{ padding: 8 }}>
+                <Typography variant="selectLabel" style={{ padding: 8 }}>
                   {this.props.localization.placeholder}
                 </Typography>
               )}
